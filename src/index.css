@@ -1,0 +1,19 @@
+/* Outfit font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Ovo font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+/* Import tailwind */
+@import 'tailwindcss';
+
+.outfit-font {
+  font-family: 'Outfit', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ovo-font {
+  font-family: 'Ovo', serif;
+  font-weight: normal;
+  font-style: normal;
+}
