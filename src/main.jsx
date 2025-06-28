@@ -5,7 +5,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
-import Home from './Home';
+import Home from './pages/Home/Home';
 
 
 const router = createBrowserRouter([
