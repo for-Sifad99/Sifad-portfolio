@@ -5,14 +5,21 @@ import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
-import vscode from './vscode.png';
-import firebase from './firebase.png';
-import figma from './figma.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
+import html from './techs/html5.png';
+import css from './techs/css3.png';
+import tailwind from './techs/tailwindcss.png';
+import js from './techs/javascript.png';
+import react from './techs/react.png';
+import node from './techs/nodejs.png';
+import express from './techs/express.png';
+import mongodb from './techs/mongodb.png';
+import firebase from './techs/firebase.png';
+import git from './techs/git.png';
+import vscode from './techs/visual.png';
+import figma from './techs/figma.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
@@ -35,6 +42,20 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import {
+    SiHtml5,
+    SiCss3,
+    SiTailwindcss,
+    SiJavascript,
+    SiReact,
+    SiNodedotjs,
+    SiExpress,
+    SiMongodb,
+    SiFirebase,
+    SiGit,
+    SiVscodium,
+    SiFigma
+} from 'react-icons/si';
 
 export const assets = {
     user_image,
@@ -44,11 +65,6 @@ export const assets = {
     edu_icon_dark,
     project_icon,
     project_icon_dark,
-    vscode,
-    firebase,
-    figma,
-    git,
-    mongodb,
     right_arrow_white,
     logo,
     logo_dark,
@@ -99,19 +115,90 @@ export const workData = [
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, Tailwind, JavaScript, React Js, Node Js, MongoDB.' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Diploma in Computer Science, currently studying at college.' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 10+ projects with clean code and responsive design.' }
 ];
 
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
-];
+
+
+
+
+export const techs = [
+    {
+        img: html,
+        title: 'HTML',
+        icon: SiHtml5,
+        description: 'Standard markup language for structuring and presenting content across web browsers and mobile devices.'
+    },
+    {
+        img: css,
+        title: 'CSS',
+        icon: SiCss3 ,
+        description: 'Style sheet language used to design and style websites, layouts, animations, and responsive elements.'
+    },
+    {
+        img: tailwind,
+        title: 'Tailwind',
+        icon: SiTailwindcss,
+        description: 'A utility-first CSS framework used for fast, responsive styling without writing custom styles manually.'
+    },
+    {
+        img: js,
+        title: 'JavaScript',
+        icon: SiJavascript ,
+        description: 'A powerful programming language for dynamic, interactive web applications and browser-based functionality.'
+    },
+    {
+        img: react,
+        title: 'React',
+        icon: SiReact ,
+        description: 'JavaScript library for building fast, modular user interfaces with reusable components and virtual DOM.'
+    },
+    {
+        img: node,
+        title: 'Node.js',
+        icon: SiNodedotjs,
+        description: 'JavaScript runtime built on Chrome’s V8 engine to build scalable, networked, server-side applications.'
+    },
+    {
+        img: express,
+        title: 'Express.js',
+        icon: SiExpress ,
+        description: 'Minimalist Node.js web framework for building fast, scalable APIs and handling server-side routing.'
+    },
+    {
+        img: mongodb,
+        title: 'MongoDB',
+        icon: SiMongodb,
+        description: 'Document-oriented NoSQL database for flexible, scalable storage of data in JSON-like documents.'
+    },
+    {
+        img: firebase,
+        title: 'Firebase',
+        icon: SiFirebase ,
+        description: 'Comprehensive app development platform with authentication, hosting, and real-time database support.'
+    },
+    {
+        img: git,
+        title: 'Git',
+        icon: SiGit ,
+        description: 'Distributed version control system for source code tracking, collaboration, and efficient project workflows.'
+    },
+    {
+        img: vscode,
+        title: 'VS Code',
+        icon: SiVscodium ,
+        description: 'Lightweight, powerful code editor with debugging, extensions, and Git support for development efficiency.'
+    },
+    {
+        img: figma,
+        title: 'Figma',
+        icon: SiFigma ,
+        description: 'Collaborative interface design tool used for creating wireframes, prototypes, and real-time design feedback.'
+    }
+  ];
+
+  
+  

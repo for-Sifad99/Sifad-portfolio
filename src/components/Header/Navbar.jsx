@@ -1,57 +1,75 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { assets } from '../../../assets/assets';
 
 const Navbar = () => {
+    const [isScroll, setIsScroll] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const sideMenuRef = useRef();
+
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=>{
+            if(scrollY > 50){
+                setIsScroll(true);
+            }else{
+                setIsScroll(false);
+            };
+        });
+    });
 
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)';
+        setIsOpen(true);
     };
     const closeMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(16rem)';
+        setIsOpen(false);
     };
 
     return (
         <>
-           
-            <nav className='w-full fixed ovo-font px-4 md:px-6 lg:px-[6%] py-4 flex items-center justify-between z-50'>
-                <a href='#top' className='outfit-font'>
-                    <p className='flex text-black text-[40px] font-semibold'>Sifad <span className='w-4 h-4 rounded-full bg-pink-400 mt-[30px] ml-1'></span></p>
+            <nav className={`w-full md:static fixed ovo-font md:px-6 lg:px-[6%] md:py-2 px-4 flex items-center justify-between z-50 rounded-full ${isScroll ? 'bg-white/60 backdrop-blur-md' : ''}`}>
+                <a href='#top' className={`outfit-font ${isOpen ? 'md:block hidden' : ''}`}>
+                    <p className='flex text-black text-[40px] font-semibold'>Sifad <span className='w-4 h-4 rounded-full bg-[#b5a8ff] mt-[30px] ml-1'></span></p>
                 </a>
 
-                <ul className='font-medium hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-xs bg-opacity-50'>
+                <ul className='font-medium hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-transparent shadow-sm'>
                     <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#about">About me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                 </ul>
 
-                <div className='flex items-center gap-3'>
+                <div className={`flex items-center gap-3 ${isOpen ? 'md:block hidden' : ''}`}>
                     <button>
                         <img src={assets.moon_icon} alt="" className='w-6' />
                     </button>
-                    <a href='#contact' className='border border-gray-500 hidden font-medium px-10 py-2.5 rounded-full ml-4 lg:flex gap-3 items-center'>Contact<img src={assets.arrow_icon} alt="" className='w-3' /></a>
+                    <a href='#contact' className='hidden font-medium border border-gray-400 px-10 py-2.5 rounded-full ml-4 lg:flex gap-3 items-center'>Contact<img src={assets.arrow_icon} alt="" className='w-3' /></a>
                     <button onClick={openMenu} className='block md:hidden sm:ml-3'>
                         <img src={assets.menu_black} alt="" className='w-6' />
                     </button>
                 </div>
 
                 {/* Mobile Menu */}
-                <ul ref={sideMenuRef} className='font-medium md:hidden flex flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-5 bg-rose-50 transition duration-500 h-screen'>
-                    <div onClick={closeMenu} className='absolute right-5 top-7 border border-gray-400 rounded-full p-2'>
+                <ul ref={sideMenuRef} className='font-medium md:hidden flex flex-col gap-3 pb-20 pt-4 px-10 fixed -right-64 top-0 bottom-0 w-64 z-5 bg-gradient-to-b from-[#f8e4f8] via-[#d7daf8] to-[#f1f1fc] transition duration-500 h-screen'>
+                    <div className='flex justify-between items-center pb-4'>
+                        <a href='#top' className='outfit-font'>
+                            <p className='flex text-black text-3xl font-semibold'>Sifad <span className='w-3 h-3 rounded-full bg-[#b5a8ff] mt-[18px] ml-1'></span></p>
+                        </a>
+                    <div onClick={closeMenu} className='rounded-full p-2'>
                         <img src={assets.close_black} alt="" className='w-3 cursor-pointer' />
                     </div>
+                    </div>
 
-                    <li><a onClick={closeMenu} href="top">Home</a></li>
-                    <li><a onClick={closeMenu} href="#about">About</a></li>
-                    <li><a onClick={closeMenu} href="#education">Education</a></li>
+                    <li><a onClick={closeMenu} href="#top">Home</a></li>
+                    <li><a onClick={closeMenu} href="#about">About me</a></li>
                     <li><a onClick={closeMenu} href="#skills">Skills</a></li>
                     <li><a onClick={closeMenu} href="#projects">Projects</a></li>
-                    <li><a onClick={closeMenu} href="#contact">Contact</a></li>
+                    <li><a onClick={closeMenu} href="#contact">Contact me</a></li>
                 </ul>
             </nav>
+            <div className={`md:pt-12 ${isOpen ? 'sm:pt-14 pt-10' : 'sm:pt-24 pt-20'}`}>
+            </div>
         </>
     );
 };
