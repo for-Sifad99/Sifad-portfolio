@@ -20,7 +20,7 @@ const SideNav = () => {
                     <li><a href="#top">H</a></li>
                     <li><a href="#about">A</a></li>
                     <li><a href="#skills">S</a></li>
-                    <li><a href="#projects">P</a></li>
+                    <li><a href="#works">W</a></li>
                     <li><a href="#contact">C</a></li>
                     <li><a href="#contact">
                         <img src={assets.moon_icon} alt="" className='w-[14px] mt-1' />
