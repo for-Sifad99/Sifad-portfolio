@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { assets } from '../../../assets/assets';
 
+
 const Navbar = () => {
     const [isScroll, setIsScroll] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +28,11 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`w-full md:static fixed ovo-font md:px-6 lg:px-[6%] md:py-2 px-4 flex items-center justify-between z-50 rounded-full ${isScroll ? 'bg-white/60 backdrop-blur-md' : ''}`}>
+            <nav className={`w-full md:static fixed ovo-font md:px-6 lg:px-[6%] md:py-2 px-4 flex items-center justify-between z-99 rounded-full ${isScroll ? 'bg-white/60 backdrop-blur-md' : ''}`}>
                 <a href='#top' className={`outfit-font ${isOpen ? 'md:block hidden' : ''}`}>
-                    <p className='flex text-black text-[40px] font-semibold'>Sifad <span className='w-4 h-4 rounded-full bg-[#b5a8ff] mt-[30px] ml-1'></span></p>
+                    <p className='flex text-black text-[40px] font-semibold'>Sifad 
+                        <img className='w-12' src='/portLogo.png' alt="" />
+                    </p>
                 </a>
 
                 <ul className='font-medium hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-transparent shadow-sm'>
@@ -54,7 +57,9 @@ const Navbar = () => {
                 <ul ref={sideMenuRef} className='font-medium md:hidden flex flex-col gap-3 pb-20 pt-4 px-10 fixed -right-64 top-0 bottom-0 w-64 z-5 bg-gradient-to-b from-[#f8e4f8] via-[#d7daf8] to-[#f1f1fc] transition duration-500 h-screen'>
                     <div className='flex justify-between items-center pb-4'>
                         <a href='#top' className='outfit-font'>
-                            <p className='flex text-black text-3xl font-semibold'>Sifad <span className='w-3 h-3 rounded-full bg-[#b5a8ff] mt-[18px] ml-1'></span></p>
+                            <p className='flex text-black text-3xl font-semibold'>Sifad
+                                <img className='w-8' src='/portLogo.png' alt="" />
+                            </p>
                         </a>
                     <div onClick={closeMenu} className='rounded-full p-2'>
                         <img src={assets.close_black} alt="" className='w-3 cursor-pointer' />
@@ -68,7 +73,7 @@ const Navbar = () => {
                     <li><a onClick={closeMenu} href="#contact">Contact me</a></li>
                 </ul>
             </nav>
-            <div className={`md:pt-12 ${isOpen ? 'sm:pt-14 pt-10' : 'sm:pt-24 pt-20'}`}>
+            <div className={`md:pt-8 ${isOpen ? 'sm:pt-14 pt-10' : 'sm:pt-24 pt-20'}`}>
             </div>
         </>
     );

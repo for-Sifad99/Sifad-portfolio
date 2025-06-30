@@ -31,11 +31,11 @@
 .glow-border::before {
   content: '';
   position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background: linear-gradient(270deg, #b09cff, #f39cff, #fce1d9);
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(270deg, #d3cdf7, #f3a6fd, #ffffff);
   background-size: 400% 400%;
   animation: borderAnim 6s linear infinite;
   z-index: -1;
@@ -45,7 +45,7 @@
     linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
-  padding: 4px;
+  padding: 2px;
   box-sizing: border-box;
 }
 

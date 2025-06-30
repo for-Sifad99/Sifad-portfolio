@@ -1,40 +1,65 @@
 import React from 'react';
-import { techs }from '../../../assets/assets';
-import Marquee from 'react-fast-marquee';
+import { techs } from '../../../assets/assets';
 import AnimatedBorderCard from '../AnimatedBorderCard/AnimatedBorderCard';
-
 
 const Skills = () => {
     return (
-        <div id='skills' className='px-[12%] mb-30 scroll-mt-10'>
+        <div id='skills' className='px-[14%] mb-30 scroll-mt-10'>
             <h4 className='text-center sm:mb-2 text-lg font-ovo'>My technical level</h4>
             <h2 className='text-center sm:text-5xl text-4xl font-medium font-ovo'>Skills</h2>
 
-            <Marquee
-                direction='left'
-                speed={100}
-                gradient={false}
-                pauseOnHover={true}
-                autoFill={false}
-                className='my-10'
-            >
-                <div className="flex sm:space-x-6 sm:px-3 space-x-4 px-2 overflow-hidden no-scrollbar py-5">
-                    {
-                        techs.map(({ img, icon : Icon , title, description }, i) => (
-                            <AnimatedBorderCard>
-                                <div key={i} className='sm:px-8 sm:py-5 px-6 py-3 rounded-2xl flex flex-col justify-start items-start gap-2 sm:w-64 w-50'>
-                                    <img src={img} alt={`${title} picture`} className='p-3 group-hover:p-0 group-hover:bg-transparent group-hover:border-none border-2 border-[#f7e6ff] bg-[#fff] sm:w-24 w-18 rounded-full mb-1 transition-all duration-500' />
-                                    <div className='group-hover:text-gray-700 sm:text-3xl text-2xl font-semibold flex items-center sm:gap-2 gap-1 transition-all duration-500'>
-                                        <span>{<Icon />}</span>
-                                        <p>{title}</p>
+            <div className='flex flex-col sm:flex-row sm:my-20 my-10 mx-auto md:gap-6 sm:gap-3 gap-6 font-ovo items-start max-w-xs sm:max-w-full'>
+                {/* Card 1 */}
+                <div className="flex flex-col">
+                    <AnimatedBorderCard>
+                        <div className='md:p-6 sm:px-4 p-6 rounded-xl flex flex-col'>
+                            <h1 className='text-2xl text-gray-600 font-semibold'>{techs[0].title}</h1>
+                            <div className='flex flex-wrap md:gap-2 gap-1 md:mt-5 sm:mt-4 mt-5 font-mono'>
+                                {techs[0].items.map((item, index) => (
+                                    <div key={index} className='flex items-center justify-center gap-1 bg-gray-100 shadow-sm rounded-3xl py-1 px-3'>
+                                        <img src={item.img} alt="" className='md:w-6 sm:w-4 w-6' />
+                                        <h3 className='font-semibold'>{item.title}</h3>
                                     </div>
-                                    <p className='sm:text-base text-sm sm:leading-5 text-[#494949] group-hover:text-black leading-4 transition-all duration-500'>{description}</p>
-                                </div>
-                            </AnimatedBorderCard>
-                        ))
-                    }
+                                ))}
+                            </div>
+                        </div>
+                    </AnimatedBorderCard>
                 </div>
-            </Marquee>
+
+                {/* Card 2 */}
+                <div className="flex flex-col">
+                    <AnimatedBorderCard>
+                        <div className='md:p-6 sm:px-4 p-6 rounded-xl flex flex-col'>
+                            <h1 className='text-2xl text-gray-600 font-semibold'>{techs[1].title}</h1>
+                            <div className='flex flex-wrap md:gap-2 gap-1 md:mt-5 sm:mt-4 mt-5 font-mono'>
+                                {techs[1].items.map((item, index) => (
+                                    <div key={index} className='flex items-center justify-center gap-1 bg-gray-100 shadow-sm rounded-3xl py-1 px-3'>
+                                        <img src={item.img} alt="" className='w-6' />
+                                        <h3 className='font-semibold'>{item.title}</h3>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </AnimatedBorderCard>
+                </div>
+
+                {/* Card 3 */}
+                <div className="flex flex-col mx-auto sm:mx-0">
+                    <AnimatedBorderCard>
+                        <div className='md:p-6 sm:px-4 p-6 rounded-xl flex flex-col'>
+                            <h1 className='text-2xl text-gray-600 font-semibold'>{techs[2].title}</h1>
+                            <div className='flex flex-wrap md:gap-2 gap-1 md:mt-5 mt-4 font-mono'>
+                                {techs[2].items.map((item, index) => (
+                                    <div key={index} className='flex items-center justify-center gap-1 bg-gray-100 shadow-sm rounded-3xl py-1 px-3'>
+                                        <img src={item.img} alt="" className='w-6' />
+                                        <h3 className='font-semibold'>{item.title}</h3>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </AnimatedBorderCard>
+                </div>
+            </div>
         </div>
     );
 };

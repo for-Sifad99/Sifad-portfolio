@@ -145,78 +145,85 @@ export const infoList = [
 
 export const techs = [
     {
-        img: html,
-        title: 'HTML',
-        icon: SiHtml5,
-        description: 'Standard markup language for structuring and presenting content across web browsers and mobile devices.'
+        title: 'Frontend',
+        items: [
+            {
+                img: html,
+                title: 'HTML',
+                icon: SiHtml5,
+                description: 'Standard markup language for structuring and presenting content across web browsers and mobile devices.'
+            },
+            {
+                img: css,
+                title: 'CSS',
+                icon: SiCss3,
+                description: 'Style sheet language used to design and style websites, layouts, animations, and responsive elements.'
+            },
+            {
+                img: tailwind,
+                title: 'Tailwind',
+                icon: SiTailwindcss,
+                description: 'A utility-first CSS framework used for fast, responsive styling without writing custom styles manually.'
+            },
+            {
+                img: js,
+                title: 'JavaSpt',
+                icon: SiJavascript,
+                description: 'A powerful programming language for dynamic, interactive web applications and browser-based functionality.'
+            },
+            {
+                img: react,
+                title: 'React',
+                icon: SiReact,
+                description: 'JavaScript library for building fast, modular user interfaces with reusable components and virtual DOM.'
+            },
+        ]
     },
     {
-        img: css,
-        title: 'CSS',
-        icon: SiCss3 ,
-        description: 'Style sheet language used to design and style websites, layouts, animations, and responsive elements.'
+        title: 'Backend',
+        items: [
+            {
+                img: node,
+                title: 'Node.js',
+                icon: SiNodedotjs,
+                description: 'JavaScript runtime built on Chrome’s V8 engine to build scalable, networked, server-side applications.'
+            },
+            {
+                img: express,
+                title: 'Express',
+                icon: SiExpress,
+                description: 'Minimalist Node.js web framework for building fast, scalable APIs and handling server-side routing.'
+            },
+            {
+                img: mongodb,
+                title: 'MongoDB',
+                icon: SiMongodb,
+                description: 'Document-oriented NoSQL database for flexible, scalable storage of data in JSON-like documents.'
+            },
+            {
+                img: firebase,
+                title: 'Firebase',
+                icon: SiFirebase,
+                description: 'Comprehensive app development platform with authentication, hosting, and real-time database support.'
+            },
+        ]
     },
     {
-        img: tailwind,
-        title: 'Tailwind',
-        icon: SiTailwindcss,
-        description: 'A utility-first CSS framework used for fast, responsive styling without writing custom styles manually.'
-    },
-    {
-        img: js,
-        title: 'JavaScript',
-        icon: SiJavascript ,
-        description: 'A powerful programming language for dynamic, interactive web applications and browser-based functionality.'
-    },
-    {
-        img: react,
-        title: 'React',
-        icon: SiReact ,
-        description: 'JavaScript library for building fast, modular user interfaces with reusable components and virtual DOM.'
-    },
-    {
-        img: node,
-        title: 'Node.js',
-        icon: SiNodedotjs,
-        description: 'JavaScript runtime built on Chrome’s V8 engine to build scalable, networked, server-side applications.'
-    },
-    {
-        img: express,
-        title: 'Express.js',
-        icon: SiExpress ,
-        description: 'Minimalist Node.js web framework for building fast, scalable APIs and handling server-side routing.'
-    },
-    {
-        img: mongodb,
-        title: 'MongoDB',
-        icon: SiMongodb,
-        description: 'Document-oriented NoSQL database for flexible, scalable storage of data in JSON-like documents.'
-    },
-    {
-        img: firebase,
-        title: 'Firebase',
-        icon: SiFirebase ,
-        description: 'Comprehensive app development platform with authentication, hosting, and real-time database support.'
-    },
-    {
-        img: git,
-        title: 'Git',
-        icon: SiGit ,
-        description: 'Distributed version control system for source code tracking, collaboration, and efficient project workflows.'
-    },
-    {
-        img: vscode,
-        title: 'VS Code',
-        icon: SiVscodium ,
-        description: 'Lightweight, powerful code editor with debugging, extensions, and Git support for development efficiency.'
-    },
-    {
-        img: figma,
-        title: 'Figma',
-        icon: SiFigma ,
-        description: 'Collaborative interface design tool used for creating wireframes, prototypes, and real-time design feedback.'
+        title: 'Tools',
+        items: [
+            {
+                img: git,
+                title: 'Git',
+                icon: SiGit,
+                description: 'Distributed version control system for source code tracking, collaboration, and efficient project workflows.'
+            },
+            {
+                img: vscode,
+                title: 'VS',
+                icon: SiVscodium,
+                description: 'Lightweight, powerful code editor with debugging, extensions, and Git support for development efficiency.'
+            },
+        ]
     }
-  ];
-
-  
+];
   

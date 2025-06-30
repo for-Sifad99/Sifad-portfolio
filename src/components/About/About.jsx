@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../../../assets/my-github-picture.jpg';
+import pic from '../../../assets/my-github-picture.png';
 import {infoList} from '../../../assets/assets';
 
 const About = () => {
