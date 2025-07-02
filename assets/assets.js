@@ -19,7 +19,6 @@ import mongodb from './techs/mongodb.png';
 import firebase from './techs/firebase.png';
 import git from './techs/git.png';
 import vscode from './techs/visual.png';
-import figma from './techs/figma.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
@@ -42,9 +41,12 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import Shelfy from '../assets/WorksImg/Shelfy.png';
 import Cooksy from '../assets/WorksImg/Cooksy.png';
-import Shiftify from '../assets/WorksImg/Shiftify.png'; 
 import JobTrack from '../assets/WorksImg/JobTrack.png';
+import CooksyLogo from '../assets/worksImg/CooksyLogo.png';
+import ShelfyLogo from '../assets/worksImg/ShelfyLogo.png';
+import JobTrackLogo from '../assets/worksImg/JobTrackLogo.png';
 import {
     SiHtml5,
     SiCss3,
@@ -57,7 +59,6 @@ import {
     SiFirebase,
     SiGit,
     SiVscodium,
-    SiFigma
 } from 'react-icons/si';
 
 export const assets = {
@@ -99,6 +100,7 @@ export const works = [
     {
         id: 1,
         title: "Cooksy",
+        webLogo: CooksyLogo,
         image: Cooksy,
         overview:
             "Cooksy lets food lovers explore, add, and share recipes with a clean, real-time interface designed for home cooks and enthusiasts.",
@@ -106,25 +108,29 @@ export const works = [
             "Managing live updates and syncing likes in real-time with Firebase was challenging.",
         future:
             "Plans to add video tutorials, meal planning, and smart shopping lists for easier cooking.",
+        stack: [html, css, tailwind, js, react, express, mongodb, firebase],
         live: "https://teal-biscochitos-d75707.netlify.app/",
         client: "https://github.com/for-Sifad99/Coocsy?tab=readme-ov-file",
     },
     {
         id: 2,
         title: "Shelfy",
-        image: Shiftify,
+        webLogo: ShelfyLogo,
+        image: Shelfy,
         overview:
             "Shelfy helps schools manage book catalogs, borrowing, and returns with an intuitive, responsive design.",
         challenge:
             "Creating smooth, dynamic animations using Framer Motion without performance drops was tough.",
         future:
             "Upcoming features include barcode scanning, overdue alerts, and reading progress reports.",
+        stack: [html, css, tailwind, js, react, express, mongodb, firebase],
         live: "https://shelfybook.netlify.app/",
         client: "https://github.com/for-Sifad99/Shelfy?tab=readme-ov-file",
     },
     {
         id: 3,
         title: "Job Track",
+        webLogo: JobTrackLogo,
         image: JobTrack,
         overview:
             "Job Track connects job seekers with opportunities through a sleek UI and secure Firebase authentication.",
@@ -132,6 +138,7 @@ export const works = [
             "Building secure private routes and managing dynamic user sessions was challenging.",
         future:
             "Plans to add a resume builder, AI-powered job suggestions, and employer dashboards.",
+        stack: [html, css, tailwind, js, react, firebase],
         live: "https://hello-job-auth-55f6e.web.app/",
         client: "https://github.com/for-Sifad99/Job-Track?tab=readme-ov-file",
     }
@@ -226,4 +233,3 @@ export const techs = [
         ]
     }
 ];
-  

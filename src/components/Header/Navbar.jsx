@@ -28,22 +28,22 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`w-full md:static fixed ovo-font md:px-6 lg:px-[6%] md:py-2 px-4 flex items-center justify-between z-99 rounded-full ${isScroll ? 'bg-white/60 backdrop-blur-md' : ''}`}>
+            <nav className={`w-full md:static fixed ovo-font md:px-6 lg:px-[6%] md:py-2 px-4 flex items-center justify-between z-999 rounded-full ${isScroll ? 'bg-white/60 backdrop-blur-md' : ''}`}>
                 <a href='#top' className={`outfit-font ${isOpen ? 'md:block hidden' : ''}`}>
-                    <p className='flex text-black text-[40px] font-semibold'>Sifad 
+                    <p className='flex text-black text-[40px] font-semibold '>Sifad 
                         <img className='w-12' src='/portLogo.png' alt="" />
                     </p>
                 </a>
 
                 <ul className='font-medium hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-transparent shadow-sm'>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <a href="#top"> <li>Home</li></a>
+                    <a href="#about"> <li>About me</li></a>
+                    <a href="#skills"> <li>Skills</li></a>
+                    <a href="#works"> <li>Works</li></a>
+                    <a href="#contact"> <li>Contact me</li></a>
                 </ul>
 
-                <div className={`flex items-center gap-3 ${isOpen ? 'md:block hidden' : ''}`}>
+                <div className={`flex items-center justify-center gap-3 ${isOpen ? 'md:block hidden' : ''}`}>
                     <button>
                         <img src={assets.moon_icon} alt="" className='w-6' />
                     </button>
@@ -54,8 +54,8 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <ul ref={sideMenuRef} className='font-medium md:hidden flex flex-col gap-3 pb-20 pt-4 px-10 fixed -right-64 top-0 bottom-0 w-64 z-5 bg-gradient-to-b from-[#f8e4f8] via-[#d7daf8] to-[#f1f1fc] transition duration-500 h-screen'>
-                    <div className='flex justify-between items-center pb-4'>
+                <ul ref={sideMenuRef} className='font-medium md:hidden flex flex-col gap-3 pb-20 pt-4 px-10 fixed -right-64 top-0 bottom-0 w-64 bg-gradient-to-b from-[#f8e4f8] via-[#d7daf8] to-[#f1f1fc] transition duration-500 h-screen'>
+                    <div className='flex justify-between items-center pb-40'>
                         <a href='#top' className='outfit-font'>
                             <p className='flex text-black text-3xl font-semibold'>Sifad
                                 <img className='w-8' src='/portLogo.png' alt="" />

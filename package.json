@@ -19,6 +19,9 @@
     "react-parallax-tilt": "^1.7.299",
     "react-router-dom": "^7.6.3",
     "react-simple-typewriter": "^5.0.1",
+    "react-spinners": "^0.17.0",
+    "react-tooltip": "^5.29.1",
+    "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
@@ -26,6 +29,7 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
+    "daisyui": "^5.0.43",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

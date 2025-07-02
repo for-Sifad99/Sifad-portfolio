@@ -24,7 +24,7 @@ const Hero = () => {
                 </span>
             </h1>
             <p className='max-w-2xl mx-auto text-sm sm:text-base font-ovo sm:leading-5 leading-4 sm:-my-1 -my-2 text-medium'>
-                I am a passionate fullstack web developer from Chandpur, Bangladesh, currently learning and building exciting projects to sharpen my skills for future opportunities.
+                I am a passionate fullstack web developer from Chandpur, Bangladesh. Currently learning and building exciting projects to sharpen my skills for future opportunities.
             </p>
             <div className='flex flex-col sm:flex-row items-center md:gap-4 gap-1 mt-2'>
                 <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>contact me <img src={assets.right_arrow_white} alt="" className='w-4' /></a>

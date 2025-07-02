@@ -20,14 +20,14 @@ const SideNav = () => {
         {
             isVisible &&
             <>
-                <ul className='text-base md:fixed right-4 bottom-20 max-h-xs w-12 font-medium hidden md:flex flex-col items-center shadow-xs rounded-full py-4 ovo-font bg-amber-200 bg-opacity-50'>
-                    <li className='p-2 bg-slate-100 rounded-full mb-1'><a href="#top"><IoHomeOutline /></a></li>
-                    <li className='p-2 bg-slate-100 rounded-full mb-1'><a href="#about"><FaRegCircleUser /></a></li>
-                    <li className='p-2 bg-slate-100 rounded-full mb-1'><a href="#skills"><SiHyperskill /></a></li>
-                    <li className='p-2 bg-slate-100 rounded-full mb-1'><a href="#works"><MdWorkOutline /></a></li>
-                    <li className='p-2 bg-slate-100 rounded-full mb-1'><a href="#contact"><MdOutlineMailOutline /></a></li>
+                <ul className='text-base md:fixed right-4 bottom-20 max-h-xs w-12 font-medium hidden md:flex flex-col items-center shadow-xs rounded-full py-4 ovo-font bg-amber-200 bg-opacity-50 z-990'>
+                    <li className='p-2 hover:bg-slate-100 rounded-full transition-all duration-500'><a href="#top"><IoHomeOutline /></a></li>
+                    <li className='p-2 hover:bg-slate-100 rounded-full transition-all duration-500'><a href="#about"><FaRegCircleUser /></a></li>
+                    <li className='p-2 hover:bg-slate-100 rounded-full transition-all duration-500'><a href="#skills"><SiHyperskill /></a></li>
+                    <li className='p-2 hover:bg-slate-100 rounded-full transition-all duration-500'><a href="#works"><MdWorkOutline /></a></li>
+                    <li className='p-2 hover:bg-slate-100 rounded-full transition-all duration-500'><a href="#contact"><MdOutlineMailOutline /></a></li>
                 </ul>
-                <a href='#top' className='outfit-font'>
+                <a href='#top' className='outfit-font z-990 bg-white/20'>
                     <p className='md:fixed xl:left-20 lg:left-14 left-6 top-3 hidden md:flex text-black text-[40px] font-semibold'>Sifad    
                         <img className='w-12' src='/portLogo.png' alt="" />
                     </p>

@@ -1,13 +1,13 @@
 import React from 'react';
-import glitch from '../../../assets/contactGlitch.png';
+import glitch from '../../../assets/glitch.png';
 
 const Contact = () => {
     return (
-        <div id='contact' className="px-[12%] my-30 scroll-mt-10">
+        <div id='contact' className="px-[12%] md:mb-30 sm:mb-26 mb-24 scroll-mt-10">
             <h4 className='text-center sm:mb-2 text-lg font-ovo'>Ping</h4>
             <h2 className='text-center sm:text-5xl text-4xl font-medium font-ovo'>Contact</h2>
 
-            <div className='lg:my-20 my-10 flex flex-col md:flex-row items-center justify-center font-mono'>
+            <div className='my-8 sm:my-10 md:my-12 lg:my-16 flex flex-col md:flex-row items-center justify-center font-mono'>
             {/* Left - Form */}
                 <div className="w-full md:w-1/2 max-w-md space-y-4 order-2 md:order-1">
                 <p className="flex sm:items-center gap-1 text-gray-600 sm:mb-6 mb-4 sm:text-sm text-xs font-semibold">
