@@ -1,12 +1,111 @@
-# React + Vite
+# Sifad's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and Vite showcasing full-stack web development projects.
 
-Currently, two official plugins are available:
+## 🌟 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio website is designed to showcase the skills and projects of Sifad, a passionate full-stack web developer from Chandpur, Bangladesh. The site features a sleek, interactive design with smooth animations and a responsive layout that works across all devices.
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Modern UI/UX Design**: Clean, responsive layout with dark/light mode support
+- **Interactive Elements**: Animated cursor, hover effects, and smooth transitions
+- **Project Showcase**: Detailed display of web development projects with tech stacks
+- **Skills Section**: Organized display of frontend, backend, and tools expertise
+- **Contact Form**: Direct messaging capability with EmailJS integration
+- **Performance Optimized**: Fast loading with Vite and modern React practices
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React 19
+- Vite 7
+- Tailwind CSS 4
+- DaisyUI
+- Framer Motion (Animations)
+- GSAP (Advanced animations)
+- React Router DOM v7
+
+### Key Libraries
+- react-icons (Icon library)
+- react-simple-typewriter (Typing effects)
+- swiper (Carousel/slider)
+- react-tooltip (Tooltips)
+- react-hot-toast (Notifications)
+- react-parallax-tilt (3D tilt effects)
+
+### Backend Integration
+- Node.js
+- Express.js
+- MongoDB
+- Firebase
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── About/          # About section component
+│   ├── Contact/        # Contact form component
+│   ├── Footer/         # Footer component
+│   ├── Header/         # Navigation components
+│   ├── Hero/           # Hero/intro section
+│   ├── HeroImg/        # Profile image component
+│   ├── Skills/         # Skills/tech stack display
+│   └── Works/          # Projects showcase
+├── pages/
+│   ├── Home/           # Main page component
+│   └── Shared/         # Reusable UI components
+├── hooks/              # Custom React hooks
+├── assets.js           # Project data and assets
+├── index.css           # Global styles
+└── main.jsx            # Entry point
+```
+
+## 🎯 Featured Projects
+
+1. **RideX (Team Project)**
+   - AI-assisted ride-sharing platform with real-time tracking
+   - Tech: Next.js, Tailwind, React, Express, MongoDB, Socket.IO, Google Gemini
+
+2. **EchoNow**
+   - News aggregator platform with premium content and subscriptions
+   - Tech: HTML, CSS, Tailwind, JavaScript, React, Express, MongoDB, Firebase
+
+3. **ShelfyBook**
+   - Library management system for book inventory and borrowing
+   - Tech: HTML, CSS, Tailwind, JavaScript, React, Express, MongoDB, Firebase
+
+## 🏃‍♂️ Development
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 📧 Contact
+
+For inquiries, you can reach out through the contact form on the website or directly via email.
+
+## 📄 License
+
+This project is proprietary and belongs to Sifad. All rights reserved.

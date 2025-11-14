@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const HeroImg = () => {
     return (
-        <div className='w-full h-full z-50 flex justify-center items-center'>
-            <div className='relative w-[250px] h-[250px] overflow-visible'>
+        <div className='w-full h-full flex justify-center items-center'>
+            <div className='relative w-[226px] h-[226px] sm:w-[250px] sm:h-[250px] overflow-visible'>
                 {/* Animated Circle Behind Image */}
                 <motion.svg
                     className='absolute top-0 left-0 w-full h-full z-0'
@@ -17,7 +17,7 @@ const HeroImg = () => {
                         cx="253"
                         cy="253"
                         r="250"
-                        stroke='#000'
+                        className='dark:stroke-white stroke-black'
                         strokeWidth='6'
                         strokeLinecap='round'
                         strokeLinejoin='round'
@@ -42,12 +42,13 @@ const HeroImg = () => {
                         opacity: 1,
                         transition: { delay: 1, duration: 0.4, ease: 'easeInOut' }
                     }}
-                    className='absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[4%] w-[230px] bg-[#d7d7dd] rounded-full z-10 '
+                    className='absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[4.3%] w-[210px] sm:w-[230px] sm:h-[230px] bg-[#d7d7dd] rounded-full
+                    '
                 >
                     <img
                         src={photo}
                         alt="user photo"
-                        className='object-contain w-full'
+                        className='object-contain w-full rounded-full'
                     />
                     
                 </motion.div>

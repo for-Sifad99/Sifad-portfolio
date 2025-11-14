@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 /* Ovo font cdn */
 @import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+/* Dosis font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
 
 /* Import tailwind */
 @import 'tailwindcss';
@@ -10,18 +13,22 @@
 
 .outfit-font {
   font-family: 'Outfit', sans-serif;
-  font-weight: normal;
   font-style: normal;
 }
 
 .ovo-font {
   font-family: 'Ovo', serif;
-  font-weight: normal;
+  font-style: normal;
+}
+
+.dosis-font {
+  font-family: "Dosis", sans-serif;
   font-style: normal;
 }
 
 *{
   scroll-behavior : smooth;
+  cursor: default;
 }
 
 .text-outline-black {
@@ -41,7 +48,7 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(270deg, #d3cdf7, #f3a6fd, #ffffff);
+  background: linear-gradient(270deg, #d3cdf7, #f3a6fd, #fde2e2);
   background-size: 400% 400%;
   animation: borderAnim 6s linear infinite;
   z-index: -1;
@@ -59,6 +66,14 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* Theme related setting */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Website reusable colors */
+@theme {
+
 }
 
 
