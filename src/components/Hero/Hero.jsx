@@ -40,7 +40,13 @@ const Hero = () => {
                     {/* Animated background */}
                     <div className='absolute inset-0 bg-purple-300 rounded-full -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-20'></div>
 
-                    <a href="/public/sifad-resume.pdf" download className='px-6 py-2 sm:px-10 sm:py-3 border border-gray-500 group-hover:border-purple-300  rounded-full flex items-center gap-2 relative z-20'>my resume <MdOutlineFileDownload /></a>
+                    <a
+  href="/sifad-resume.pdf"
+  download
+  className='px-6 py-2 sm:px-10 sm:py-3 border border-gray-500 group-hover:border-purple-300 rounded-full flex items-center gap-2 relative z-20'
+>
+  my resume <MdOutlineFileDownload />
+</a>
                 </div>
             </div>
         </div>
